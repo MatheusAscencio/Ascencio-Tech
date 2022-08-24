@@ -1,0 +1,79 @@
+
+<div class="container">
+  <div class="row mt-5">
+    <div class="col-4">
+      <img src="https://placebeard.it/640x360" alt="Matheus" class="img-fluid">
+    </div>
+    <div class="col-8 justify-content-center align-items-center">
+        <h1 class="mt-5">MATHEUS ZICOLAN ASCENCIO</h1>
+        <h5>ENGENHEIRO DA COMPUTAÇÃO E DESENVOLVEDOR DE SOFTWARE</h5>
+    </div>
+  </div>
+  <div class="row mt-4">
+    <div class="col-12">
+      <div class="d-flex justify-content-center">
+        <p>Acesse meu perfil no LinkedIn para ter mais informações sobre minha formação como profissional na área de T.I</p>
+      </div>
+      <div class="d-grid gap-2">
+        <button class="btn btn-success" type="button">Saiba mais</button>
+      </div>
+    </div>
+  </div>
+  <app-carousel></app-carousel>
+</div>
+<div class="container-fluid">
+  <div class="row bg-light p-4">
+    <div class="col-12">
+      <h1>DESENVOLVIMENTO PERSONALIZADO</h1>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row mt-5 mb-5">
+    <div class="col-4" *ngFor="let type of siteTypes">
+      <div class="d-flex justify-content-center">
+        <app-card [title]="type"></app-card>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container-fluid">
+  <div class="row bg-light p-4">
+    <div class="col-12">
+      <h1>MODELOS PRONTOS</h1>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row mt-5 mb-5">
+    <div class="col-4" *ngFor="let type of siteTypes">
+      <div class="d-flex justify-content-center">
+        <app-card [title]="type"></app-card>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container-fluid">
+  <div class="row bg-light p-4">
+    <div class="col-12">
+      <h1>TECNOLOGIAS UTILIZADAS</h1>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row mt-5">
+    <div class="col-12">
+      <div class="d-flex justify-content-center">
+        <img src="https://dummyimage.com/680x320/#808080/aaa" alt="teste">
+        <small>Todos os sites são desenvolvidos com as tecnologias mais modernas do mercado!</small>
+      </div>
+    </div>
+  </div>
+  <div class="row mt-5 mb-5">
+    <div class="col-3" *ngFor="let tech of techs">
+      <div class="d-flex justify-content-center">
+        <app-card2 [title]="tech.title" [link]="tech.link"></app-card2>
+      </div>
+    </div>
+  </div>
+</div>
