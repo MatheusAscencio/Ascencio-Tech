@@ -12,10 +12,10 @@
   <div class="row mt-4">
     <div class="col-12">
       <div class="d-flex justify-content-center">
-        <p>Acesse meu perfil no LinkedIn para ter mais informações sobre minha formação como profissional na área de T.I</p>
+        <p>Acesse meu perfil no LinkedIn para ter mais informações sobre minha formação como profissional de T.I</p>
       </div>
       <div class="d-grid gap-2">
-        <button class="btn btn-success" type="button">Saiba mais</button>
+        <a href="http://www.linkedin.com/in/matheus-ascencio" class="btn btn-success">Saiba mais</a>
       </div>
     </div>
   </div>
@@ -32,7 +32,7 @@
   <div class="row mt-5 mb-5">
     <div class="col-4" *ngFor="let type of siteTypes">
       <div class="d-flex justify-content-center">
-        <app-card [title]="type"></app-card>
+        <app-card [title]="type.title"></app-card>
       </div>
     </div>
   </div>
@@ -48,7 +48,7 @@
   <div class="row mt-5 mb-5">
     <div class="col-4" *ngFor="let type of siteTypes">
       <div class="d-flex justify-content-center">
-        <app-card [title]="type"></app-card>
+        <app-card [title]="type.title" [link]="type.link"></app-card>
       </div>
     </div>
   </div>
@@ -65,7 +65,13 @@
     <div class="col-12">
       <div class="d-flex justify-content-center">
         <img src="https://dummyimage.com/680x320/#808080/aaa" alt="teste">
-        <small>Todos os sites são desenvolvidos com as tecnologias mais modernas do mercado!</small>
+      </div>
+    </div>
+  </div>
+  <div class="row mt-3">
+    <div class="col-12">
+      <div class="d-flex justify-content-center">
+        <p>Todos os sites são desenvolvidos com as tecnologias mais modernas do mercado!</p>
       </div>
     </div>
   </div>

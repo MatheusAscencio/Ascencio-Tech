@@ -7,9 +7,10 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class Card2Component implements OnInit {
 
-  @Input('title') title: string = "Title"
-  @Input('text') text: string = "Some quick example text to build on the card title and make up the bulk of the card's content."
-  @Input('link') link: string = "link"
+  @Input('title') title: string = "Title";
+  @Input('subtitle') subtitle: string = "Card subtitle";
+  text: string = "Para melhor entendimento da tecnologia, cheque o site abaixo.";
+  @Input('link') link: string = "link";
 
   constructor() { }
 

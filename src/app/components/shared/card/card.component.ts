@@ -9,6 +9,7 @@ export class CardComponent implements OnInit {
 
   @Input('title') title: string = "Title";
   @Input('text') text: string = "Some quick example text to build on the card title and make up the bulk of the card's content.";
+  @Input('link') link : string = '';
 
   constructor() { }
 

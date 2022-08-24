@@ -5,19 +5,23 @@ import { AppRoutingModule } from './app.routes';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LayoutModule } from './layout/layout.module';
-import { PagesModule } from './pages/pages.module';
+import { SharedModule } from './components/shared/shared.module';
+import { HomeComponent } from './pages/home/home.component';
+import { SolarComponent } from './pages/solar/solar.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
+    HomeComponent,
+    SolarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     LayoutModule,
-    PagesModule
+    SharedModule
   ],
   providers: [],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
