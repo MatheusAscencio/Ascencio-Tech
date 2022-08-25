@@ -8,13 +8,17 @@ import { LayoutModule } from './layout/layout.module';
 import { SharedModule } from './components/shared/shared.module';
 import { HomeComponent } from './pages/home/home.component';
 import { SolarComponent } from './pages/solar/solar.component';
+import { ModelsComponent } from './pages/models/models.component';
+import { CustomComponent } from './pages/custom/custom.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    SolarComponent
+    SolarComponent,
+    ModelsComponent,
+    CustomComponent
   ],
   imports: [
     BrowserModule,
